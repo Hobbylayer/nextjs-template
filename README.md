@@ -27,3 +27,7 @@ yarn dev
 - Image preview
 - Import Cost
 - Better comments
+
+## ESTRUCTURA DE PROYECTO
+
+El codigo de nuestro proyecto se encuentra en la carpeta src, next js maneja un sistema de rutas basado en file system todo lo que creemos en la carpeta pages, se convierte en un ruta de nla aplicacione.
