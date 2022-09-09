@@ -1,12 +1,24 @@
 // ** Icon imports
-import Table from 'mdi-material-ui/Table'
+// import Table from 'mdi-material-ui/Table'
 import CubeOutline from 'mdi-material-ui/CubeOutline'
 import HomeOutline from 'mdi-material-ui/HomeOutline'
-import FormatLetterCase from 'mdi-material-ui/FormatLetterCase'
-import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
+
+// import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 
 // ** React icons imports
-import { MdAccountBalance, MdDescription, MdNoteAdd, MdRequestQuote, MdLocationPin, MdSettings, MdPeople, MdPool, MdReportProblem } from "react-icons/md";
+import {
+  MdAccountBalance,
+  MdDescription,
+  MdNoteAdd,
+  MdRequestQuote,
+  MdLocationPin,
+  MdSettings,
+  MdPeople,
+  MdPool,
+  MdReportProblem,
+  MdBarChart
+} from "react-icons/md";
+
 
 
 // ** Type import
@@ -70,24 +82,26 @@ const navigation = (): VerticalNavItemsType => {
       icon: MdSettings,
       path: '/app/settings',
     },
+
+    // {
+    //   sectionTitle: 'Reportes'
+    // },
     {
-      sectionTitle: 'Reports'
+      title: "Reports",
+      icon: MdBarChart,
+      path: '/app/reports'
     },
-    {
-      title: 'Typography',
-      icon: FormatLetterCase,
-      path: '/typography'
-    },
-    {
-      title: 'Cards',
-      icon: CreditCardOutline,
-      path: '/cards'
-    },
-    {
-      title: 'Tables',
-      icon: Table,
-      path: '/tables'
-    },
+
+    // {
+    //   title: 'Cards',
+    //   icon: CreditCardOutline,
+    //   path: '/cards'
+    // },
+    // {
+    //   title: 'Tables',
+    //   icon: Table,
+    //   path: '/tables'
+    // },
     {
       icon: CubeOutline,
       title: 'Form Layouts',
