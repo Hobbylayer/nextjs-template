@@ -11,11 +11,19 @@ Este proyecto esta construido
 Debe asegurarte de tener node 14 o superior instalado y luego instalar los modulos de node
 
 ```bash
-npm install
+yarn
 ```
 
 Ahora para levantar el proyecto
 
 ```bash
-npm run dev
+yarn dev
 ```
+
+## EXTENCIONES VS CODE RECOMENDADA
+
+- Prettier
+- Error lens
+- Image preview
+- Import Cost
+- Better comments
