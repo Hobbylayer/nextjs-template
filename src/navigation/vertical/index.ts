@@ -33,19 +33,16 @@ const navigation = (): VerticalNavItemsType => {
       title: 'Ingresos',
       icon: MdNoteAdd,
       path: '/app/income',
-      openInNewTab: true
     },
     {
       title: 'Gastos',
       icon: MdDescription,
       path: '/app/expenses',
-      openInNewTab: true
     },
     {
       title: 'Bancos',
       icon: MdAccountBalance,
-      path: '/app/banks-accont',
-      openInNewTab: true
+      path: '/app/banks-accounts',
     },
     { sectionTitle: 'Condominio' },
     {
@@ -71,7 +68,7 @@ const navigation = (): VerticalNavItemsType => {
     {
       title: 'Configuracion',
       icon: MdSettings,
-      path: '/app/locations',
+      path: '/app/settings',
     },
     {
       sectionTitle: 'Reports'
