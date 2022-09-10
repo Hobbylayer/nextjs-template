@@ -12,10 +12,10 @@ import Typography from '@mui/material/Typography'
 import CardContent from '@mui/material/CardContent'
 
 // ** Icons Imports
-import TrendingUp from 'mdi-material-ui/TrendingUp'
+// import TrendingUp from 'mdi-material-ui/TrendingUp'
 import CurrencyUsd from 'mdi-material-ui/CurrencyUsd'
 import DotsVertical from 'mdi-material-ui/DotsVertical'
-import CellphoneLink from 'mdi-material-ui/CellphoneLink'
+import { MdBatteryAlert } from 'react-icons/md'
 import AccountOutline from 'mdi-material-ui/AccountOutline'
 
 // ** Types
@@ -29,29 +29,29 @@ interface DataType {
 }
 
 const salesData: DataType[] = [
+  // {
+  //   stats: '245k',
+  //   title: 'Sales',
+  //   color: 'primary',
+  //   icon: <TrendingUp sx={{ fontSize: '1.75rem' }} />
+  // },
   {
-    stats: '245k',
-    title: 'Sales',
-    color: 'primary',
-    icon: <TrendingUp sx={{ fontSize: '1.75rem' }} />
+    stats: '$140',
+    color: 'info',
+    title: 'Ingresos',
+    icon: <CurrencyUsd sx={{ fontSize: '1.75rem' }} />
   },
   {
-    stats: '12.5k',
-    title: 'Customers',
+    stats: '60',
+    title: 'Residentes',
     color: 'success',
     icon: <AccountOutline sx={{ fontSize: '1.75rem' }} />
   },
   {
-    stats: '1.54k',
+    stats: '3',
     color: 'warning',
-    title: 'Products',
-    icon: <CellphoneLink sx={{ fontSize: '1.75rem' }} />
-  },
-  {
-    stats: '$88k',
-    color: 'info',
-    title: 'Revenue',
-    icon: <CurrencyUsd sx={{ fontSize: '1.75rem' }} />
+    title: 'Incidentes activos',
+    icon: <MdBatteryAlert />
   }
 ]
 
@@ -85,20 +85,20 @@ const StatisticsCard = () => {
   return (
     <Card>
       <CardHeader
-        title='Statistics Card'
-        action={
-          <IconButton size='small' aria-label='settings' className='card-more-options' sx={{ color: 'text.secondary' }}>
-            <DotsVertical />
-          </IconButton>
-        }
-        subheader={
-          <Typography variant='body2'>
-            <Box component='span' sx={{ fontWeight: 600, color: 'text.primary' }}>
-              Total 48.5% growth
-            </Box>{' '}
-            😎 this month
-          </Typography>
-        }
+        title='Bienvenido'
+        // action={
+        //   <IconButton size='small' aria-label='settings' className='card-more-options' sx={{ color: 'text.secondary' }}>
+        //     <DotsVertical />
+        //   </IconButton>
+        // }
+        // subheader={
+        //   <Typography variant='body2'>
+        //     <Box component='span' sx={{ fontWeight: 600, color: 'text.primary' }}>
+        //       Total 48.5% growth
+        //     </Box>{' '}
+        //     😎 this month
+        //   </Typography>
+        // }
         titleTypographyProps={{
           sx: {
             mb: 2.5,
