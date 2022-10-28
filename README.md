@@ -18,6 +18,8 @@ Este proyecto esta construido
 - Nextjs
 - Axios
 - Material UI
+- Husky
+- Eslint
 
 ## Enviroment
 
