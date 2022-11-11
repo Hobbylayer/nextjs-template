@@ -1,4 +1,4 @@
-import { FC, useState, ChangeEvent } from 'react'
+import { FC, useState, ChangeEvent, CSSProperties } from 'react'
 
 // mui imports
 import Table from '@mui/material/Table'
@@ -15,7 +15,9 @@ import Skeleton from '@mui/material/Skeleton'
 type ColumConfig = {
   name: string
   label: string
-  minWidth?: string
+  minWidth?: string,
+  bodyClass?: string,
+  bodyStyle?: CSSProperties
 }
 
 type OnChangeEvent = {
@@ -51,7 +53,8 @@ export const HLDataTable: FC<Props> = ({
   onChange,
   registers,
   totalRegisters,
-  page = 1
+  page = 1,
+
 }) => {
   const [rowPerPage, updateRowPerPage] = useState(10)
 
@@ -123,9 +126,9 @@ export const HLDataTable: FC<Props> = ({
               {registers.map(objectInfo => {
                 return (
                   <TableRow key={Math.random()}>
-                    {columnConfig.map(({ name }) => {
+                    {columnConfig.map(({ name, bodyClass, bodyStyle }) => {
                       return (
-                        <TableCell key={name}>
+                        <TableCell className={bodyClass && bodyClass} style={bodyStyle && bodyStyle} key={name}>
                           {loading ? (
                             <Skeleton />
                           ) : (
