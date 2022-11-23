@@ -29,6 +29,12 @@ Debe asegurarte de tener node 14 o superior instalado y luego instalar los modul
 yarn
 ```
 
+Configurar los git hook
+
+```bash
+yarn prepare
+```
+
 Ahora para levantar el proyecto
 
 ```bash
